@@ -2,15 +2,18 @@
   <img alt="Vue logo" src="./assets/logo.png">
   <h1>Learing Vue-js</h1>
   <EventComonent/>
+  <ChildComponent/>
 </template>
 <script>
+import ChildComponent from './components/childComponent.vue';
 import EventComonent from './components/EventComonent.vue';
 
 
 
 export default {
  components:{
-  EventComonent
+  EventComonent,
+  ChildComponent
  }
 }
 </script>
