@@ -1,13 +1,16 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
   <h1>Learing Vue-js</h1>
- <HomeComponent title="kashif"/>
+  <EventComonent/>
 </template>
 <script>
-import HomeComponent from './components/HomeComponent.vue';
+import EventComonent from './components/EventComonent.vue';
+
+
+
 export default {
  components:{
-  HomeComponent
+  EventComonent
  }
 }
 </script>
