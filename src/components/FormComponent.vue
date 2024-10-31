@@ -1,6 +1,6 @@
 <template>
 <form @submit.prevent="submit">
-    <input  type="text" placeholder="Please Enter Name" value="name" v-model="form.name">
+    <input  type="text" placeholder="Please Enter Name" value="name" v-model.lazy="form.name">
     <h1 v-if="error.includes('name')">Invalid Name</h1>
 
 <br>

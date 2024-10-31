@@ -7,16 +7,16 @@
 </template>
 <script>
 // import ChildComponent from './components/childComponent.vue';
-// import EventComonent from './components/EventComonent.vue';
-import FormComponent from './components/FormComponent.vue';
+import EventComonent from './components/EventComonent.vue';
+// import FormComponent from './components/FormComponent.vue';
 
 
 
 export default {
  components:{
-  // EventComonent,
+  EventComonent,
   // ChildComponent
-  FormComponent
+  // FormComponent
  }
 }
 </script>

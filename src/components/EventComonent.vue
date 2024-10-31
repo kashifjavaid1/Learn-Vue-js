@@ -35,16 +35,20 @@ methods:{
 
     <h1>{{count}}</h1> -->
 
-    <input type="text" placeholder="Enter user Name" v-model="name">
+    <input type="text" placeholder="Enter user Name" v-model.lazy.trim="name">
+    <br>
+    <br>
+    <input type="email" placeholder="Enter user Email" v-model="email">
     <br>
     <br>
     <label for="java">Java</label>
     <input type="checkbox" name="java" id="java" value="java" v-model="technlogy">  
     <label for="react">React</label>
     <input type="checkbox" name="react" id="react" value="react" v-model="technlogy">
-
-    {{technlogy}}
-    {{name}}
+<h1>stack:
+    {{technlogy}}</h1>
+   <h1>Name:{{name}}</h1>
+ <h1>Email:{{email}}</h1>
 </template>
 
 
@@ -56,7 +60,8 @@ export default {
     data(){
         {
             return {
-                name:null,
+                name:"",
+                email:"",
                 technlogy:[]
             }
         }
