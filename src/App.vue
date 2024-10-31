@@ -30,6 +30,9 @@ export default {
   FormComponent,
     NodeComponent,PhpComponent
  },
+ beforeCreate(){
+   alert("Before Created Loading")
+ },
  data(){
 return {
   tab:'NodeComponent'
