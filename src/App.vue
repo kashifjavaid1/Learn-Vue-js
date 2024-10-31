@@ -50,6 +50,9 @@ h1{
   <router-link to="/about">PhpComponent</router-link>
   <br>
   <router-link to="/php">NodeComponent</router-link>
+  <br>
+  <br>
+  <router-link to="/user/">Dyanmic User</router-link>
   <router-view></router-view>
 </template>
 
