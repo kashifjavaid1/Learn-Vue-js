@@ -1,21 +1,18 @@
-<template>
+<!-- <template>
   <img alt="Vue logo" src="./assets/logo.png">
   <h1>Learing Vue-js</h1>
-  <!-- <EventComonent/>
-  <ChildComponent/>
-  <FormComponent/> -->
-  <!-- <NodeComponent/>
-  <PhpComponent/> -->
+ >
 
 <button @click="tab='NodeComponent'">Node js</button>
 <button @click="tab='PhpComponent'">Php</button>
 <button @click="tab='FormComponent'">Form</button>
 <br>
 <br>
-  <component :is="tab"/>
+  <component :is="tab"/> -->
 
-</template>
-<script>
+<!-- </template> -->
+
+<!-- <script>
 import NodeComponent from './components/NodeComponent.vue';
 import PhpComponent from './components/PhpComponent.vue';
 
@@ -25,13 +22,12 @@ import FormComponent from './components/FormComponent.vue';
 
 export default {
  components:{
-  // EventComonent,
-  // ChildComponent
+  
   FormComponent,
     NodeComponent,PhpComponent
  },
  beforeCreate(){
-   alert("Before Created Loading")
+   alert("Before Created LOA")
  },
  data(){
 return {
@@ -44,4 +40,21 @@ return {
 h1{
   color: orange;
 }
-</style>
+</style> -->
+
+
+
+<template>
+  <router-link to="/">HomeComponent</router-link>
+  <br>
+  <router-link to="/about">PhpComponent</router-link>
+  <br>
+  <router-link to="/php">NodeComponent</router-link>
+  <router-view></router-view>
+</template>
+
+<script>
+export default {
+  name:"App"
+}
+</script>
