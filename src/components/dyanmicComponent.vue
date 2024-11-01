@@ -1,5 +1,5 @@
 <template>
-    <h1>Dyanmic routing</h1>
+    <h1>Dyanmic routing page</h1>
     <h1>
         User Name: {{ $route.params.name }}
     </h1>
